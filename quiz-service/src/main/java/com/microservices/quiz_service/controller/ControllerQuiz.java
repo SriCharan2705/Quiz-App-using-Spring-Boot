@@ -28,8 +28,6 @@ public class ControllerQuiz {
     public ResponseEntity<Quiz> getQuizById(@RequestParam int id){
         return serviceQuiz.getQuizById(id);
     }
-
-
     @GetMapping("/get/{id}")
     public ResponseEntity<List<QuestionWrapper>> getQuizQuestions(@PathVariable Integer id){
         return serviceQuiz.getQuizQuestion(id);
@@ -42,6 +40,4 @@ public class ControllerQuiz {
     public ResponseEntity<Integer> submitQuiz(@PathVariable Integer id, @RequestBody List<Sheet> response){
         return serviceQuiz.calculateResult(id,response);
     }
-
-    //questions in quiz
 }

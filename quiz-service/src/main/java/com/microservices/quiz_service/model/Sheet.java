@@ -5,6 +5,6 @@ import lombok.Data;
 @Data
 public class Sheet {
     private int quizId;
-    private int qId;
-    private Character answer;
+    private int Id;
+    private Character option;
 }

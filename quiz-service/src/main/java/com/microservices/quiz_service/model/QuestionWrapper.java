@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 public class QuestionWrapper {
 
     @Id
-    private int qId;
+    private int Id;
     private String question;
     private String option_a;
     private String option_b;
